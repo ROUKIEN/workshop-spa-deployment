@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  mc:
+    image: minio/mc
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: minio123
+    volumes:
+      - ./minio/:/root/.mc/:rw
+    networks:
+      - minio
