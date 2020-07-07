@@ -17,6 +17,8 @@ Add the previously domain names to your `/etc/hosts` file
 
 restart the containers & try to access to blog.windmill, staging.blog.windmill through your web browser
 
+> The nginx configuration & settings are heavily inspired from this gist: https://gist.github.com/harshavardhana/f05b60fe6f96803743f38bea4b565bbf
+
 # What it resolves
 
 This proof of concept allows anybody to deploy static websites on an internal network S3 backend by just creating a bucket whose name is simply the website. Those websites may be SPAs.
